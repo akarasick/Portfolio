@@ -1,116 +1,46 @@
 /* Global Variables */
 :root {
+  -webkit-user-select: none;
+  /* Safari, Chrome */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Standard syntax */
+
   --font-family: 'Arial', sans-serif;
-  --transition-speed: 0.3s;
 
-  /* Light theme colors */
-  --background-light: #ffffff;
-  --text-light: #333333;
-  --button-light: #007bff;
-  --button-hover-light: #0056b3;
-  --border-light: #e0e0e0;
-
-  /* Dark theme colors */
-  --background-dark: #121212;
-  --text-dark: #ffffff;
-  --button-dark: #1d72b8;
-  --button-hover-dark: #155a8a;
-  --border-dark: #333333;
-
-  /* Other Variables */
-  --vibrant-effect: rgba(255, 255, 255, 0.1);
-}
-
-/* Dark Theme */
-[data-theme="dark"] {
-  --background: var(--background-dark);
-  --text: var(--text-dark);
-  --button: var(--button-dark);
-  --button-hover: var(--button-hover-dark);
-  --border: var(--border-dark);
-}
-
-/* Light Theme */
-[data-theme="light"] {
-  --background: var(--background-light);
+  /* default light theme */
+  --background: #fff;
   --text: var(--text-light);
   --button: var(--button-light);
   --button-hover: var(--button-hover-light);
   --border: var(--border-light);
 }
 
+/* Dark Theme */
+.dark {
+  --background: #000 !important;
+  --text: var(--text-dark);
+  --button: var(--button-dark);
+  --button-hover: var(--button-hover-dark);
+  --border: var(--border-dark);
+}
+
+.selectable {
+  -webkit-user-select: text;
+  /* Safari, Chrome */
+  -moz-user-select: text;
+  /* Firefox */
+  -ms-user-select: text;
+  /* Internet Explorer/Edge */
+  user-select: text;
+  /* Standard syntax */
+}
+
 body {
-  font-family: var(--font-family);
-  background-color: var(--background);
-  color: var(--text);
   margin: 0;
   padding: 0;
-  transition: all var(--transition-speed);
-}
-
-button {
-  background-color: var(--button);
-  color: var(--text);
-  padding: 10px 20px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color var(--transition-speed);
-}
-
-button:hover {
-  background-color: var(--button-hover);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  color: var(--text);
-  padding: 10px 0;
-}
-
-/* Vibrancy (like Apple) */
-.vibrant {
-  background: var(--vibrant-effect);
-  backdrop-filter: blur(8px);
-  border-radius: 10px;
-  padding: 20px;
-  transition: all var(--transition-speed);
-}
-
-.vibrant:hover {
-  backdrop-filter: blur(12px);
-}
-
-/* Media Queries */
-@media screen and (max-width: 768px) {
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
-    padding: 8px 0;
-  }
-
-  button {
-    padding: 8px 15px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
-    font-size: 18px;
-  }
-
-  button {
-    padding: 6px 12px;
-  }
+  background-color: var(--background);
 }
