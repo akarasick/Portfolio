@@ -1,32 +1,7 @@
+@import url("./css/variables.css");
 @import url("./css/theme.css");
+@import url("./css/fonts.css");
 @import url("./css/dark-light-toggler.css");
-
-
-/* SF Pro (apple.com) fonts */
-@font-face {
-  font-family: 'SF Pro Regular';
-  src: url("./assets/fonts/sf-pro-display_regular.woff2");
-}
-
-@font-face {
-  font-family: 'SF Pro Display Semibold';
-  src: url("./assets/fonts/sf-pro-display_semibold.woff2");
-}
-
-@font-face {
-  font-family: 'SF Pro Text Semibold';
-  src: url("./assets/fonts/sf-pro-text_semibold.woff2");
-}
-
-@font-face {
-  font-family: 'SF Pro Text Light';
-  src: url("./assets/fonts/sf-pro-text_light.woff2");
-}
-
-@font-face {
-  font-family: 'SF Pro Icon Light';
-  src: url("./assets/fonts/sf-pro-icons_light.woff2");
-}
 
 /* Global Variables */
 :root {
@@ -39,11 +14,7 @@
   user-select: none;
   /* Standard syntax */
 
-  --font-family-sf-pro-regular: 'SF Pro Regular';
-  --font-family-sf-pro-display-semibold: 'SF Pro Display Semibold';
-  --font-family-sf-pro-text-semibold: 'SF Pro Text Semibold';
-  --font-family-sf-pro-text-light: 'SF Pro Text Light';
-  --font-family-sf-pro-icon-light: 'SF Pro Icon Light';
+  font-family: var(--font-family-sf-pro-regular);
 }
 
 .selectable {
@@ -60,6 +31,12 @@
 body {
   margin: 0;
   padding: 0;
+  height: 100vh;
+  background: url("/assets/images/unnamed.webp");
+  background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), radial-gradient(ellipse at 80% 5%, #4c00ff 0%, rgb(255 40 184 / 0%) 30%), radial-gradient(ellipse at bottom left, #ff0076 0%, rgb(15 156 255 / 31%) 60%), linear-gradient(135deg, rgba(18, 46, 119, 0) 0%, rgba(18, 46, 119, 0) 75%, #395eff 100%), linear-gradient(82deg, #00c4ff 0%, #74b5ff 27%, #88b8ff 74%, #3b88ff 100%);
+  background-blend-mode: screen, hue, color, overlay;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 header {
