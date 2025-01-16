@@ -1,28 +1,30 @@
+import { LocalStorage } from './localstorge.js';
+
 /**
  * @exports
  * @class console
  * @description - console class adapter class
  */
 export class Console {
-  #isLogEnabled = false;
+  #localStorage;
 
   /**
    * @constructor
-   * @param {boolean} [isLogEnabled]
+   * @param {LocalStorage} [localStorage]
    */
-  constructor(isLogEnabled) {
-    if (isLogEnabled !== undefined) this.#isLogEnabled = isLogEnabled;
+  constructor(localStorage) {
+    this.#localStorage = localStorage || new LocalStorage();
   }
 
   /**
-   * @public
+   * @private
    * @returns {void}
    * @param {Function} logger
    * @param {string} style
    * @description adapter for logging on console
    */
-  print(logger, style) {
-    if (!this.#isLogEnabled) return;
+  #print(logger, style) {
+    if (this.#localStorage.getItem('LOGGING') !== '1') return;
 
     const timestamp = new Date().toISOString();
     const message = arguments[2];
@@ -37,7 +39,7 @@ export class Console {
   * @description equivalent to console.log
   */
   log() {
-    this.print(console.log, 'font-weight: bold', ...arguments);
+    this.#print(console.log, 'font-weight: bold', ...arguments);
   }
 
   /**
@@ -46,17 +48,6 @@ export class Console {
   * @description equivalent to console.error
   */
   error() {
-    this.print(console.error, 'font-weight: bold', ...arguments);
-  }
-
-  /**
-   * @setter
-   * @public
-   * @returns {void}
-   * @param {boolean} value
-   * @description set logging enable/disable
-   */
-  set setLogging(value) {
-    this.#isLogEnabled = value;
+    this.#print(console.error, 'font-weight: bold', ...arguments);
   }
 }
