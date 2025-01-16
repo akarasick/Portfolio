@@ -1,6 +1,33 @@
 @import url("./css/theme.css");
 @import url("./css/dark-light-toggler.css");
 
+
+/* SF Pro (apple.com) fonts */
+@font-face {
+  font-family: 'SF Pro Regular';
+  src: url("./assets/fonts/sf-pro-display_regular.woff2");
+}
+
+@font-face {
+  font-family: 'SF Pro Display Semibold';
+  src: url("./assets/fonts/sf-pro-display_semibold.woff2");
+}
+
+@font-face {
+  font-family: 'SF Pro Text Semibold';
+  src: url("./assets/fonts/sf-pro-text_semibold.woff2");
+}
+
+@font-face {
+  font-family: 'SF Pro Text Light';
+  src: url("./assets/fonts/sf-pro-text_light.woff2");
+}
+
+@font-face {
+  font-family: 'SF Pro Icon Light';
+  src: url("./assets/fonts/sf-pro-icons_light.woff2");
+}
+
 /* Global Variables */
 :root {
   -webkit-user-select: none;
@@ -11,6 +38,12 @@
   /* Internet Explorer/Edge */
   user-select: none;
   /* Standard syntax */
+
+  --font-family-sf-pro-regular: 'SF Pro Regular';
+  --font-family-sf-pro-display-semibold: 'SF Pro Display Semibold';
+  --font-family-sf-pro-text-semibold: 'SF Pro Text Semibold';
+  --font-family-sf-pro-text-light: 'SF Pro Text Light';
+  --font-family-sf-pro-icon-light: 'SF Pro Icon Light';
 }
 
 .selectable {
