@@ -1,27 +1,27 @@
 /* SF Pro (apple.com) fonts */
 @font-face {
   font-family: 'SF Pro Regular';
-  src: url("/assets/fonts/sf-pro-display_regular.woff2");
+  src: url("../assets/fonts/sf-pro-display_regular.woff2");
 }
 
 @font-face {
   font-family: 'SF Pro Display Semibold';
-  src: url("/assets/fonts/sf-pro-display_semibold.woff2");
+  src: url("../assets/fonts/sf-pro-display_semibold.woff2");
 }
 
 @font-face {
   font-family: 'SF Pro Text Semibold';
-  src: url("/assets/fonts/sf-pro-text_semibold.woff2");
+  src: url("../assets/fonts/sf-pro-text_semibold.woff2");
 }
 
 @font-face {
   font-family: 'SF Pro Text Light';
-  src: url("/assets/fonts/sf-pro-text_light.woff2");
+  src: url("../assets/fonts/sf-pro-text_light.woff2");
 }
 
 @font-face {
   font-family: 'SF Pro Icon Light';
-  src: url("/assets/fonts/sf-pro-icons_light.woff2");
+  src: url("../assets/fonts/sf-pro-icons_light.woff2");
 }
 
 :root {
