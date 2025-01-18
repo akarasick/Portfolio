@@ -59,11 +59,14 @@ function setCVDownloadGACustomEvent() {
     if (!cvDownloadBtn) return;
 
     cvDownloadBtn.addEventListener('click', function () {
-      sendGACustomEvent('cv_download', {
-        'event_category': 'portfolio',
-        'event_label': 'cv_download',
-        'value': 1
-      });
+      if (localStorage.getItem('CV_DOWNLOADED') !== '1') {
+        sendGACustomEvent('cv_download', {
+          'event_category': 'portfolio',
+          'event_label': 'cv_download',
+          'value': 1
+        });
+        localStorage.setItem('CV_DOWNLOADED', '1');
+      }
     });
   } catch (error) {
     console.error('set CV download GA custom event - ', error);
