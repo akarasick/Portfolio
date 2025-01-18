@@ -19,6 +19,21 @@ function changeTheme(newTheme) {
 
 /**
  * @returns {void}
+ * @param {string} eventName
+ * @param {any} value
+ * @description send custom google analytics events
+ */
+function sendGACustomEvent(eventName, value) {
+  try {
+    if (!gtag) return;
+    gtag('event', eventName, value);
+  } catch (error) {
+    console.error('Send GACustomEvent theme failed - ', error);
+  }
+}
+
+/**
+ * @returns {void}
  * @description set id=themeChanger button click event
  */
 function setThemeChanger() {
@@ -36,12 +51,34 @@ function setThemeChanger() {
 
 /**
  * @returns {void}
+ * @description set cv download button trackable
+ */
+function setCVDownloadGACustomEvent() {
+  try {
+    const cvDownloadBtn = document.getElementById('cv-download');
+    if (!cvDownloadBtn) return;
+
+    cvDownloadBtn.addEventListener('click', function () {
+      sendGACustomEvent('cv_download', {
+        'event_category': 'portfolio',
+        'event_label': 'cv_download',
+        'value': 1
+      });
+    });
+  } catch (error) {
+    console.error('set CV download GA custom event - ', error);
+  }
+}
+
+/**
+ * @returns {void}
  * @description initialization of app
  */
 function init() {
   try {
     if (theme) changeTheme(theme);
     setThemeChanger();
+    setCVDownloadGACustomEvent();
   } catch (error) {
     console.error('App initalizatin failed - ', error);
   }

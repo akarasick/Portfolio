@@ -14,7 +14,7 @@
   user-select: none;
   /* Standard syntax */
 
-  font-family: var(--font-family-sf-pro-regular);
+  font-family: var(--font-family-sf-pro-display-regular);
 }
 
 .selectable {

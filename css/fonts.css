@@ -1,6 +1,6 @@
 /* SF Pro (apple.com) fonts */
 @font-face {
-  font-family: 'SF Pro Regular';
+  font-family: 'SF Pro Display Regular';
   src: url("../assets/fonts/sf-pro-display_regular.woff2");
 }
 
@@ -25,7 +25,7 @@
 }
 
 :root {
-  --font-family-sf-pro-regular: 'SF Pro Regular';
+  --font-family-sf-pro-display-regular: 'SF Pro Display Regular';
   --font-family-sf-pro-display-semibold: 'SF Pro Display Semibold';
   --font-family-sf-pro-text-semibold: 'SF Pro Text Semibold';
   --font-family-sf-pro-text-light: 'SF Pro Text Light';
