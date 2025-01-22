@@ -4,21 +4,21 @@
 }
 
 .sun-and-moon> :is(.moon, .sun) {
-  fill: red;
+  fill: var(--secondary-color);
 }
 
 .theme-changer:is(:hover, :focus-visible)>.sun-and-moon> :is(.moon, .sun) {
-  fill: green;
+  fill: var(--secondary-color-tint);
 }
 
 .sun-and-moon>.sun-beams {
-  stroke: blue;
+  stroke: var(--secondary-color-tint);
   stroke-width: 2px;
   stroke-linecap: round;
 }
 
 .theme-changer:is(:hover, :focus-visible) .sun-and-moon>.sun-beams {
-  stroke: maroon;
+  stroke: var(--secondary-color);
 }
 
 .dark .sun-and-moon>.sun {

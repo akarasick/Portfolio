@@ -13,8 +13,6 @@
   /* Internet Explorer/Edge */
   user-select: none;
   /* Standard syntax */
-
-  font-family: var(--font-family-sf-pro-display-regular);
 }
 
 .selectable {
@@ -31,21 +29,29 @@
 body {
   margin: 0;
   padding: 0;
-  height: 100vh;
-  background: url("./assets/images/unnamed.webp");
-  background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), radial-gradient(ellipse at 80% 5%, #4c00ff 0%, rgb(255 40 184 / 0%) 30%), radial-gradient(ellipse at bottom left, #ff0076 0%, rgb(15 156 255 / 31%) 60%), linear-gradient(135deg, rgba(18, 46, 119, 0) 0%, rgba(18, 46, 119, 0) 75%, #395eff 100%), linear-gradient(82deg, #00c4ff 0%, #74b5ff 27%, #88b8ff 74%, #3b88ff 100%);
-  background-blend-mode: screen, hue, color, overlay;
-  background-size: cover;
-  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
 }
 
 header {
   width: 100%;
-  position: sticky;
   top: 0;
+  position: sticky;
+
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+
+  background-blend-mode: overlay;
+  backdrop-filter: blur(var(--backdrop-filter-blur));
+  -webkit-backdrop-filter: blur(var(--backdrop-filter-blur));
+
+  max-height: var(--rsp-space-44px);
+  background-color: var(--primary-color-shade);
 }
 
 header>nav>ul {
@@ -54,4 +60,24 @@ header>nav>ul {
   justify-content: space-between;
   align-items: center;
   list-style: none;
+}
+
+header>nav>ul>li>a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font: var(--font-sf-pro-small);
+  letter-spacing: var(--letter-spacing-01-em);
+}
+
+header>nav>ul>li>a:hover {
+  color: var(--secondary-color-shade);
+}
+
+.theme-changer {
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
 }

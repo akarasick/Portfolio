@@ -87,7 +87,8 @@ function init() {
   }
 }
 
+'use strict';
 var localStorage = new LocalStorage();
 var console = new Console(localStorage);
-var theme = localStorage.getItem('THEME') ?? 'light';
+var theme = localStorage.getItem('THEME');
 init();

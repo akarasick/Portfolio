@@ -1,1 +1,8 @@
-:root {}
+:root {
+  /* space variables */
+  --rsp-space-44px: 2.75rem;
+
+  --backdrop-filter-blur: 20px;
+
+  --letter-spacing-01-em: -.01em;
+}
