@@ -1,4 +1,5 @@
 import { Console } from './js/console.js';
+import { Theme } from './js/enum.js';
 import { LocalStorage } from './js/localstorge.js';
 
 /**
@@ -42,7 +43,7 @@ function setThemeChanger() {
     if (!themeChanger) return;
 
     themeChanger.addEventListener('click', function () {
-      changeTheme(theme === 'light' ? 'dark' : 'light');
+      changeTheme(theme === Theme.LIGHT ? Theme.DARK : Theme.LIGHT);
     });
   } catch (error) {
     console.error('Set theme changer failed - ', error);
@@ -90,5 +91,5 @@ function init() {
 'use strict';
 var localStorage = new LocalStorage();
 var console = new Console(localStorage);
-var theme = localStorage.getItem('THEME');
+var theme = localStorage.getItem('THEME') || (window?.matchMedia?.('(prefers-color-scheme: dark)')?.matches ? Theme.DARK : Theme.LIGHT); // checking system dark mode is enable or not
 init();

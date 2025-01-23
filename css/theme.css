@@ -1,37 +1,5 @@
 * {
-  transition: color .1s ease-out, background-color .1s ease-out;
-}
-
-:root {
-  /* light theme */
-  --primary-color: rgba(255, 255, 255, 1);
-  --primary-color-shade: rgba(245, 245, 247, .8);
-  --primary-color-tint: rgba(245, 245, 247, .8);
-
-  --secondary-color: #22262a;
-  --secondary-color-shade: #000;
-  --secondary-color-tint: #454d54;
-
-  --tertiary-color: #007AFF;
-  --tertiary-color-shade: #005BB5;
-  --tertiary-color-tint: #66AFFF;
-}
-
-/* system theme setup */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --primary-color: #1C1C1E;
-    --primary-color-shade: #2C2C2E;
-    --primary-color-tint: #3A3A3C;
-
-    --secondary-color: rgba(255, 255, 255, 1);
-    --secondary-color-shade: rgba(245, 245, 247, .8);
-    --secondary-color-tint: rgba(245, 245, 247, .8);
-
-    --tertiary-color: #0A84FF;
-    --tertiary-color-shade: #007BFF;
-    --tertiary-color-tint: #66A8FF;
-  }
+  transition: color .05s ease, background-color .25s ease;
 }
 
 .light {
