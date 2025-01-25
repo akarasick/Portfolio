@@ -1,4 +1,5 @@
 * {
+  pointer-events: none;
   transition: color .05s cubic-bezier(.4, 0, .6, 1), background-color .32s cubic-bezier(.4, 0, .6, 1), opacity .24s cubic-bezier(.4, 0, .6, 1) 80ms, visibility .24s step-start 80ms;
 }
 

@@ -1,7 +1,11 @@
 @media only screen and (min-width: 768px) {
 
+  .bread-menu {
+    display: none;
+  }
+
   header>nav {
-    max-width: var(--space-368px);
+    max-width: calc(var(--space-2px) * 184);
   }
 
   .responsive-menu {
@@ -20,7 +24,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 0 0 0 var(--space-16px);
+    padding: 0 0 0 calc(var(--space-2px) * 8);
   }
 
   .responsive-menu>ul>li>a {
@@ -28,7 +32,22 @@
     font: var(--font-sf-pro-text-small);
   }
 
-  .bread-menu {
-    display: none;
+  #home {
+    padding: calc(var(--space-2px) * 25) 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .developer {
+    display: block;
+    width: max-content;
+    position: relative;
+  }
+  
+  .developer>.ring {
+    position: absolute;
+    top: 34%;
+    left: -20%;
   }
 }

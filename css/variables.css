@@ -1,19 +1,20 @@
 :root {
   /* space variables */
-  --space-10px: 0.625rem;
+  --space-1px: 0.0625rem;
+  --space-2px: 0.125rem;
+  --space-3px: 0.1875rem;
+  --space-5px: 0.3125rem;
+  --space-7px: 0.4375rem;
   --space-11px: 0.6875rem;
-  --space-12px: 0.75rem;
-  --space-16px: 1rem;
-  --space-28px: 1.75rem;
-  --space-44px: 2.75rem;
-  --space-368px: 23rem;
 
   /* z-index */
   --z-index-1: 1;
+  --z-index-10: 10;
 
   /* letter-spacing */
   --letter-spacing-01-em: -.01em;
   --letter-spacing-007-em: .007em;
+  --letter-spacing-002-em: .002em;
 
   /* css filters */
   --filter-blur-20px: blur(20px);
