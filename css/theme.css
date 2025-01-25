@@ -1,32 +1,32 @@
 * {
-  transition: color .05s ease, background-color .25s ease;
+  transition: color .05s cubic-bezier(.4, 0, .6, 1), background-color .32s cubic-bezier(.4, 0, .6, 1), opacity .24s cubic-bezier(.4, 0, .6, 1) 80ms, visibility .24s step-start 80ms;
 }
 
 .light {
   /* light theme */
-  --primary-color: rgba(255, 255, 255, 1);
-  --primary-color-shade: rgba(245, 245, 247, .8);
-  --primary-color-tint: rgba(245, 245, 247, .8);
+  --color-primary: rgba(255, 255, 255, .8);
+  --color-primary-shade: rgba(255, 255, 255, .54);
+  --color-primary-tint: rgba(255, 255, 255, 1);
 
-  --secondary-color: #22262a;
-  --secondary-color-shade: #000;
-  --secondary-color-tint: #454d54;
+  --color-secondary: rgba(0, 0, 0, .8);
+  --color-secondary-shade: rgba(0, 0, 0, 1);
+  --color-secondary-tint: rgba(0, 0, 0, .54);
 
-  --tertiary-color: #007AFF;
-  --tertiary-color-shade: #005BB5;
-  --tertiary-color-tint: #66AFFF;
+  --color-tertiary: rgba(0, 122, 255, .54);
+  --color-tertiary-shade: rgba(0, 122, 255, .8);
+  --color-tertiary-tint: rgba(0, 122, 255, 1);
 }
 
 .dark {
-  --primary-color: #1C1C1E;
-  --primary-color-shade: #2C2C2E;
-  --primary-color-tint: #3A3A3C;
+  --color-primary: rgba(0, 0, 0, .8);
+  --color-primary-shade: rgba(0, 0, 0, 1);
+  --color-primary-tint: rgba(0, 0, 0, .54);
 
-  --secondary-color: rgba(255, 255, 255, 1);
-  --secondary-color-shade: rgba(245, 245, 247, .8);
-  --secondary-color-tint: rgba(245, 245, 247, .8);
+  --color-secondary: rgba(255, 255, 255, .8);
+  --color-secondary-shade: rgba(255, 255, 255, .54);
+  --color-secondary-tint: rgba(255, 255, 255, 1);
 
-  --tertiary-color: #0A84FF;
-  --tertiary-color-shade: #007BFF;
-  --tertiary-color-tint: #66A8FF;
+  --color-tertiary: rgba(0, 122, 255, .54);
+  --color-tertiary-shade: rgba(0, 122, 255, .8);
+  --color-tertiary-tint: rgba(0, 122, 255, 1);
 }

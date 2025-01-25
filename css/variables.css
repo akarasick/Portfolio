@@ -1,8 +1,21 @@
 :root {
   /* space variables */
-  --rsp-space-44px: 2.75rem;
+  --space-10px: 0.625rem;
+  --space-11px: 0.6875rem;
+  --space-12px: 0.75rem;
+  --space-16px: 1rem;
+  --space-28px: 1.75rem;
+  --space-44px: 2.75rem;
+  --space-368px: 23rem;
 
-  --backdrop-filter-blur: 20px;
+  /* z-index */
+  --z-index-1: 1;
 
+  /* letter-spacing */
   --letter-spacing-01-em: -.01em;
+  --letter-spacing-007-em: .007em;
+
+  /* css filters */
+  --filter-blur-20px: blur(20px);
+  --saturate-180-percentage: saturate(180%);
 }

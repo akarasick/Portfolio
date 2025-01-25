@@ -1,53 +1,59 @@
 /* SF Pro (apple.com) fonts */
 @font-face {
-  font-family: 'SF Pro Display Regular';
-  src: url("../assets/fonts/sf-pro-display_regular.woff2");
-}
-
-@font-face {
-  font-family: 'SF Pro Display Semibold';
-  src: url("../assets/fonts/sf-pro-display_semibold.woff2");
-}
-
-@font-face {
-  font-family: 'SF Pro Text Semibold';
-  src: url("../assets/fonts/sf-pro-text_semibold.woff2");
+  font-family: 'SF Pro Text Bold';
+  src: url("../assets/fonts/SF-Pro-Text/sf-pro-text_bold.woff2");
 }
 
 @font-face {
   font-family: 'SF Pro Text Light';
-  src: url("../assets/fonts/sf-pro-text_light.woff2");
+  src: url("../assets/fonts/SF-Pro-Text/sf-pro-text_light.woff2");
 }
 
 @font-face {
-  font-family: 'SF Pro Icon Light';
-  src: url("../assets/fonts/sf-pro-icons_light.woff2");
+  font-family: 'SF Pro Text Medium';
+  src: url("../assets/fonts/SF-Pro-Text/sf-pro-text_medium.woff2");
+}
+
+@font-face {
+  font-family: 'SF Pro Text';
+  src: url("../assets/fonts//SF-Pro-Text/sf-pro-text_regular.woff2");
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url("../assets/fonts/SF-Pro-Display/sf-pro-display_regular.woff2");
+}
+
+@font-face {
+  font-family: 'SF Pro Display Semibold';
+  src: url("../assets/fonts/SF-Pro-Display/sf-pro-display_semibold.woff2");
 }
 
 :root {
-  --font-family-sf-pro-display-regular: 'SF Pro Display Regular';
-  --font-family-sf-pro-display-semibold: 'SF Pro Display Semibold';
-  --font-family-sf-pro-text-semibold: 'SF Pro Text Semibold';
+  --font-family-sf-pro-text-bold: 'SF Pro Text Bold';
   --font-family-sf-pro-text-light: 'SF Pro Text Light';
-  --font-family-sf-pro-icon-light: 'SF Pro Icon Light';
+  --font-family-sf-pro-text-medium: 'SF Pro Text Medium';
+  --font-family-sf-pro-text: 'SF Pro Text';
+  --font-family-sf-pro-text-semibold: 'SF Pro Text Semibold';
+  --font-family-sf-pro-display: 'SF Pro Display';
+  --font-family-sf-pro-display-semibold: 'SF Pro Display Semibold';
 
-  --font-size-12-px: 0.75rem;
-  --font-size-14-px: 0.875rem;
-  --font-size-16-px: 1rem;
-  --font-size-18-px: 1.125rem;
-  --font-size-20-px: 1.125rem;
+  --font-size-12px: var(--space-12px);
+  --font-size-28px: var(--space-28px);
 
   --font-weight-400: 400;
-  --font-weight-500: 500;
   --font-weight-600: 600;
-  --font-weight-700: 700;
-  --font-weight-800: 800;
-  --font-weight-900: 900;
 
   --font-style-italic: italic;
   --font-style-oblique: oblique;
 
   --line-height-1: 1;
+  --line-height-1-14: 1.1428571429;
 
-  --font-sf-pro-small: var(--font-weight-400) var(--font-size-12-px)/var(--line-height-1) var(--font-family-sf-pro-text-light);
+  --font-sf-pro-text-small: var(--font-weight-400) var(--font-size-12px)/var(--line-height-1) var(--font-family-sf-pro-text);
+  --font-sf-pro-display-semibold-large: var(--font-weight-600) var(--font-size-28px)/var(--line-height-1-14) var(--font-family-sf-pro-display-semibold);
+}
+
+@media only screen and (min-width: 768px) {
+  :root {}
 }

@@ -76,6 +76,60 @@ function setCVDownloadGACustomEvent() {
 
 /**
  * @returns {void}
+ * @description set bread menu animation
+ */
+function setBreadMenuAnimation() {
+  try {
+    const breadBtn = document.getElementById('bread-menu');
+    if (!breadBtn) return;
+
+    breadBtn.addEventListener('click', function () {
+      const responsiveMenu = document.getElementById('responsive-menu');
+      if (!responsiveMenu) return;
+
+      let topBreadSelector,
+        bottomBreadSelector,
+        state,
+        visibility,
+        opacity;
+      switch (breadBtn.dataset.state) {
+        case 'Menu': {
+          topBreadSelector = 'top-bread-open';
+          bottomBreadSelector = 'bottom-bread-open';
+          state = 'Close';
+          visibility = 'visible';
+          opacity = 1;
+          break;
+        }
+        case 'Close': {
+          topBreadSelector = 'top-bread-close';
+          bottomBreadSelector = 'bottom-bread-close';
+          state = 'Menu';
+          visibility = 'collapse';
+          opacity = 0;
+          break;
+        }
+      }
+
+      const topLine = document.getElementById(topBreadSelector);
+      if (!topLine) return;
+      const bottomLine = document.getElementById(bottomBreadSelector);
+      if (!bottomLine) return;
+
+      topLine.beginElement();
+      bottomLine.beginElement();
+      breadBtn.dataset.state = state;
+      breadBtn.setAttribute('aria-label', state);
+      responsiveMenu.style.visibility = visibility;
+      responsiveMenu.style.opacity = opacity;
+    });
+  } catch (error) {
+    console.error('set hamburger menu animation - ', error);
+  }
+}
+
+/**
+ * @returns {void}
  * @description initialization of app
  */
 function init() {
@@ -83,6 +137,7 @@ function init() {
     if (theme) changeTheme(theme);
     setThemeChanger();
     setCVDownloadGACustomEvent();
+    setBreadMenuAnimation();
   } catch (error) {
     console.error('App initalizatin failed - ', error);
   }
