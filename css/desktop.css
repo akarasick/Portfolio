@@ -5,7 +5,11 @@
   }
 
   header>nav {
-    max-width: calc(var(--space-2px) * 184);
+    max-width: calc(var(--space-2px) * 215);
+  }
+
+  .theme-changer {
+    margin-left: calc(var(--space-2px) * 15);
   }
 
   .responsive-menu {

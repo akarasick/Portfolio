@@ -161,3 +161,12 @@ main {
 .developer {
   display: none;
 }
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: var(--font-sf-pro-text-small);
+  color: var(--color-secondary-tint);
+  background-color: var(--color-primary-shade);
+}

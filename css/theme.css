@@ -6,7 +6,7 @@
 .light {
   /* light theme */
   --color-primary: rgba(255, 255, 255, .8);
-  --color-primary-shade: rgba(255, 255, 255, .54);
+  --color-primary-shade: rgba(245, 245, 247, 1);
   --color-primary-tint: rgba(255, 255, 255, 1);
 
   --color-secondary: rgba(0, 0, 0, .8);
@@ -21,10 +21,10 @@
 .dark {
   --color-primary: rgba(0, 0, 0, .8);
   --color-primary-shade: rgba(0, 0, 0, 1);
-  --color-primary-tint: rgba(0, 0, 0, .54);
+  --color-primary-tint: rgba(0, 0, 0, .56);
 
   --color-secondary: rgba(255, 255, 255, .8);
-  --color-secondary-shade: rgba(255, 255, 255, .54);
+  --color-secondary-shade: rgba(245, 245, 247, 1);
   --color-secondary-tint: rgba(255, 255, 255, 1);
 
   --color-tertiary: rgba(0, 122, 255, .54);

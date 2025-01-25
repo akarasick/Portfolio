@@ -130,6 +130,23 @@ function setBreadMenuAnimation() {
 
 /**
  * @returns {void}
+ * @description set footer text
+ */
+function setFooter() {
+  try {
+    const footer = document.querySelector('footer');
+    if (!footer) return;
+
+    const p = document.createElement('p');
+    p.innerHTML = `Copyright &copy; ${new Date().getFullYear()} Rushil Shah. All rights reserved.`;
+    footer.appendChild(p);
+  } catch (error) {
+    console.error('set footer - ', error);
+  }
+}
+
+/**
+ * @returns {void}
  * @description initialization of app
  */
 function init() {
@@ -138,6 +155,7 @@ function init() {
     setThemeChanger();
     setCVDownloadGACustomEvent();
     setBreadMenuAnimation();
+    setFooter();
   } catch (error) {
     console.error('App initalizatin failed - ', error);
   }
