@@ -15,6 +15,9 @@
   user-select: none;
   /* Standard syntax */
 
+  scroll-behavior: smooth;
+
+  /* variables */
   --header-height: calc(var(--space-2px) * 22);
   --header-backdrop-filter: var(--saturate-180-percentage) var(--filter-blur-20px);
 }

@@ -37,10 +37,11 @@
   }
 
   #home {
-    padding: calc(var(--space-2px) * 25) 10%;
+    height: 100vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 12%;
   }
 
   .developer {
