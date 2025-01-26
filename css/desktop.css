@@ -55,4 +55,12 @@
     top: 34%;
     left: -20%;
   }
+
+  #about {
+    padding: 0 12%;
+  }
+
+  #projects {
+    padding: calc(var(--space-2px) * 16) 12%;
+  }
 }

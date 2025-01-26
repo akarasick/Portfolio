@@ -3,6 +3,7 @@
 @import url("./css/theme.css");
 @import url("./css/fonts.css");
 @import url("./css/dark-light-toggler.css");
+@import url("./css/components.css");
 
 /* Global Variables */
 :root {
@@ -20,17 +21,6 @@
   /* variables */
   --header-height: calc(var(--space-2px) * 22);
   --header-backdrop-filter: var(--saturate-180-percentage) var(--filter-blur-20px);
-}
-
-.selectable {
-  -webkit-user-select: text;
-  /* Safari, Chrome */
-  -moz-user-select: text;
-  /* Firefox */
-  -ms-user-select: text;
-  /* Internet Explorer/Edge */
-  user-select: text;
-  /* Standard syntax */
 }
 
 body {
@@ -149,18 +139,34 @@ main {
 }
 
 #home {
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-#home>h2 {
-  font: var(--font-sf-pro-display-semibold-largest);
-  letter-spacing: var(--letter-spacing-002-em);
+  padding: 0 calc(var(--space-2px) * 8);
 }
 
 .developer {
   display: none;
+}
+
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 calc(var(--space-2px) * 8);
+}
+#about>section {
+  width: 100%;
+}
+
+#projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 calc(var(--space-2px) * 8);
 }
 
 footer {

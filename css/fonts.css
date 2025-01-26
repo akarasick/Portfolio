@@ -39,6 +39,7 @@
   --font-family-sf-pro-display-semibold: 'SF Pro Display Semibold';
 
   --font-size-12px: calc(var(--space-2px) * 6);
+  --font-size-21px: calc(var(--space-3px) * 7);
   --font-size-28px: calc(var(--space-2px) * 14);
   --font-size-32px: calc(var(--space-2px) * 16);
 
@@ -51,9 +52,10 @@
   --line-height-1: 1;
   --line-height-1-14: 1.1428571429;
   --line-height-1-125: 1.125;
-
+  --line-height-1-19: 1.19048;
 
   --font-sf-pro-text-small: var(--font-weight-400) var(--font-size-12px)/var(--line-height-1) var(--font-family-sf-pro-text);
+  --font-sf-pro-display-medium: var(--font-weight-400) var(--font-size-21px)/var(--line-height-1-19) var(--font-family-sf-pro-display);
   --font-sf-pro-display-semibold-large: var(--font-weight-600) var(--font-size-28px)/var(--line-height-1-14) var(--font-family-sf-pro-display-semibold);
   --font-sf-pro-display-semibold-largest: var(--font-weight-600) var(--font-size-32px)/var(--line-height-1-125) var(--font-family-sf-pro-display-semibold);
 }
