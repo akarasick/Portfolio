@@ -37,16 +37,13 @@
     font: var(--font-sf-pro-text-small);
   }
 
-  main {
-    padding: 0 15% 0 6%;
-  }
-
   #home {
     height: 100vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: calc(var(--space-19px) * 10);
+    padding: 0 15% 0 6%;
   }
 
   .developer {
@@ -62,8 +59,10 @@
   }
 
   #about {
+    padding: 0 6%;
   }
 
   #projects {
+    padding: 0 6%;
   }
 }

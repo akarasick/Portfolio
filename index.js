@@ -229,7 +229,7 @@ function setTypeingEffect() {
   try {
     const names = [
       "Rushil Shah.",
-      "Open Source Contributer.",
+      'Open Source Contributor.',
       "Chess Enthusiast.",
       "Developer."
     ];
