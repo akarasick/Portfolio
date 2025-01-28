@@ -1,6 +1,6 @@
 @import url("./css/variables.css");
-@import url("./css/animation.css");
 @import url("./css/theme.css");
+@import url("./css/animation.css");
 @import url("./css/fonts.css");
 @import url("./css/dark-light-toggler.css");
 @import url("./css/components.css");
@@ -160,6 +160,7 @@ header>nav>ul li:has(.theme-changer) {
 
 main {
   margin-top: var(--header-height);
+  padding: 0 calc(var(--space-2px) * 8);
 }
 
 #home {
@@ -167,7 +168,13 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 calc(var(--space-2px) * 8);
+}
+
+#board::after {
+  content: '';
+  border-right: var(--space-1px) solid var(--color-secondary);
+  animation: var(--animation-blink);
+  margin-left: var(--space-2px);
 }
 
 .developer {
@@ -179,7 +186,6 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 0 calc(var(--space-2px) * 8);
 }
 
 #about>section {
@@ -191,7 +197,6 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 0 calc(var(--space-2px) * 8);
 }
 
 footer {

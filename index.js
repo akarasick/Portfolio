@@ -208,6 +208,72 @@ function removeLoader() {
 
 /**
  * @returns {void}
+ * @description set home section description text
+ */
+function setHomeSectionDescription() {
+  try {
+    const homeDescription = document.getElementById('home-description');
+    if (!homeDescription) return;
+
+    homeDescription.textContent = `I’m a full-stack developer with ${new Date().getFullYear() - 2020} years of experience in both MERN and MEAN stacks, blending creativity with precision to craft seamless, innovative solutions.`;
+  } catch (error) {
+    console.error('set home section description - ', error);
+  }
+}
+
+/**
+ * @returns {void}
+ * @description set typing effect on home section
+ */
+function setTypeingEffect() {
+  try {
+    const names = [
+      "Rushil Shah.",
+      "Open Source Contributer.",
+      "Chess Enthusiast.",
+      "Developer."
+    ];
+    const typingSpeed = 100; // Speed of typing
+    const erasingSpeed = 50; // Speed of erasing
+    const pauseTime = 1000; // Time before erasing
+    const board = document.getElementById('board');
+    let index = 0;
+    let charIndex = 0;
+    let currentName = '';
+
+    function type() {
+      if (charIndex < currentName.length) {
+        board.textContent += currentName.charAt(charIndex);
+        ++charIndex;
+        setTimeout(type, typingSpeed);
+      } else {
+        // After typing the current sentence, pause before erasing
+        setTimeout(erase, pauseTime);
+      }
+    }
+
+    function erase() {
+      if (charIndex > 0) {
+        board.textContent = currentName.substring(0, charIndex - 1);
+        --charIndex;
+        setTimeout(erase, erasingSpeed);
+      } else {
+        // Move to the next text in the array after erasing
+        index = index + 1 < names.length ? index + 1 : 0;
+        currentName = names[index];
+        setTimeout(type, typingSpeed);
+      }
+    }
+
+    currentName = names[index];
+    type();
+  } catch (error) {
+    console.error('set typeing effect - ', error);
+  }
+}
+
+/**
+ * @returns {void}
  * @description initialization of app
  */
 function init() {
@@ -216,8 +282,10 @@ function init() {
     setThemeChanger();
     setCVDownloadGACustomEvent();
     setBreadMenuAnimation();
-    setFooter();
     setBreadMenuAutoCloser();
+    setHomeSectionDescription();
+    setFooter();
+    setTypeingEffect();
     removeLoader();
   } catch (error) {
     console.error('App initalizatin failed - ', error);
