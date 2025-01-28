@@ -47,6 +47,7 @@ body {
   /* with fallback value */
   background-color: var(--color-primary-shade, rgba(245, 245, 247, 1));
   /* with fallback value */
+  overflow: hidden;
 }
 
 header {
@@ -123,6 +124,7 @@ header>nav>ul li>a:hover {
   overflow: hidden;
   padding: var(--header-height) var(--header-height);
   background-color: var(--color-primary-tint);
+  overflow: hidden
 }
 
 .responsive-menu[data-state="Menu"] {

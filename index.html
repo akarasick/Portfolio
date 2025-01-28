@@ -183,8 +183,16 @@
         <p class="h3">I'm a Web Developer Who Codes with Passion and Precision!</p>
       </div>
       <div class="developer">
-        <img class="man" src="./assets/images/man.svg" />
-        <img class="ring" src="./assets/images/ellipse.svg" />
+        <!-- responsive image load -->
+        <picture>
+          <!-- hack to know image is loaded or not for loader stop -->
+          <source srcset="null" media="(max-width: 767px)" style="display: none;" />
+          <img class="man" src="/assets/images/man.svg" />
+        </picture>
+        <picture class="ring">
+          <source srcset="./assets/images/ellipse.svg" media="(min-width: 768px)" />
+          <img />
+        </picture>
       </div>
     </section>
 

@@ -190,9 +190,7 @@ function removeLoader() {
     if (!loader) return;
 
     const manImage = document.querySelector('img.man');
-    if (!manImage) return;
-
-    if (manImage.complete) {
+    if (!manImage || manImage.complete) {
       loader.style.visibility = 'hidden';
       loader.style.opacity = 0;
       return;
