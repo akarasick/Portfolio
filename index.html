@@ -88,23 +88,32 @@
 </head>
 
 <body>
+
+  <!-- loader -->
+  <div id="loader">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+      <text x="50%" y="50%" font-size="24" text-anchor="middle" dy=".35em">😎</text>
+    </svg>
+  </div>
+
   <!-- Header -->
   <header>
     <nav>
       <ul>
         <li>
-          <a href="#">
+          <a href="#" data-is-clickable-in-background="false">
             <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
               <text x="0" y="16" font-family="Arial" font-size="16" fill="black">😎</text>
             </svg>
           </a>
         </li>
 
-        <div id="responsive-menu" class="responsive-menu">
+        <div id="responsive-menu" class="responsive-menu" data-state="Stale">
           <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#about">About Me</a></li>
+            <!-- class="menu-item" is required if u want to auto close menu on click -->
+            <li><a class="menu-item" href="#home">Home</a></li>
+            <li><a class="menu-item" href="#projects">Projects</a></li>
+            <li><a class="menu-item" href="#about">About Me</a></li>
             <li>
               <a id="cv-download"
                 href="https://drive.google.com/uc?export=download&id=1d5K7sJIDKpzP-Eoskk0F4btoBMrOKGJI"
@@ -116,7 +125,7 @@
         </div>
 
         <li>
-          <a class="theme-changer" id="theme-changer" aria-live="polite">
+          <a class="theme-changer" id="theme-changer" aria-live="polite" data-is-clickable-in-background="false">
             <svg class="sun-and-moon" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24">
               <mask class="moon" id="moon-mask">
                 <rect x="0" y="0" width="100%" height="100%" fill="white" />
@@ -138,7 +147,7 @@
         </li>
 
         <li>
-          <a id="bread-menu" class="bread-menu" aria-label="Menu" data-state="Menu">
+          <a id="bread-menu" class="bread-menu" aria-label="Stale">
             <svg width="18" height="18" viewBox="0 0 18 18">
               <polyline id="bread-bottom" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"
                 stroke-linejoin="round" points="2 12, 16 12">
@@ -181,7 +190,8 @@
 
     <section id="about">
       <h2 class="h2">About Me</h2>
-      <p class="h3 text-align-justify">I’m Rushil Shah, a full-stack developer specializing in MEAN and MERN stacks. I build dynamic, high-performance
+      <p class="h3 text-align-justify">I’m Rushil Shah, a full-stack developer specializing in MEAN and MERN stacks. I
+        build dynamic, high-performance
         apps that scale like a rocket 🚀. I’m all about pushing boundaries, learning new tech, and delivering solutions
         that make an impact. Let’s turn your idea into a game-changing web app — fast and flawlessly!</p>
       <section>
@@ -196,7 +206,9 @@
       <div class="project">
         <section class="project-card">
           <h3 class="h2">Chrome Extension Project</h3>
-          <p class="h3 text-align-justify">A Chrome extension I built to supercharge browsing productivity, offering quick access to essential tools and features. Using Vanilla JavaScript, I automated key processes within Chrome, streamlining workflows for a faster and smoother browsing experience.</p>
+          <p class="h3 text-align-justify">A Chrome extension I built to supercharge browsing productivity, offering
+            quick access to essential tools and features. Using Vanilla JavaScript, I automated key processes within
+            Chrome, streamlining workflows for a faster and smoother browsing experience.</p>
         </section>
       </div>
     </section>

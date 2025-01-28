@@ -34,6 +34,19 @@ body {
   background-color: var(--color-primary);
 }
 
+#loader {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: var(--z-index-100);
+  background-color: var(--color-primary-shade);
+}
+
 header {
   width: 100%;
   top: 0;
@@ -108,7 +121,14 @@ header>nav>ul li>a:hover {
   overflow: hidden;
   padding: var(--header-height) var(--header-height);
   background-color: var(--color-primary-tint);
-  animation: var(--animation-slide-in-ease-out);
+}
+
+.responsive-menu[data-state="Menu"] {
+  animation: var(--animation-slide-up);
+}
+
+.responsive-menu[data-state="Close"] {
+  animation: var(--animation-slide-down);
 }
 
 .responsive-menu>ul {
@@ -157,6 +177,7 @@ main {
   flex-direction: column;
   padding: 0 calc(var(--space-2px) * 8);
 }
+
 #about>section {
   width: 100%;
 }

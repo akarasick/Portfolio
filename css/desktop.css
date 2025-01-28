@@ -17,8 +17,9 @@
     margin: 0;
     padding: 0;
     width: 100%;
+    opacity: 1;
+    visibility: visible;
     position: relative;
-    visibility: visible !important;
     background: transparent;
     max-height: var(--header-height);
   }

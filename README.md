@@ -1,6 +1,6 @@
 # Rushil Shah's Portfolio
 
-Welcome to the official portfolio of Rushil Shah, a **Frontend Developer** specializing in **Vanilla JavaScript**, **HTML**, **CSS**, and **UI/UX Design**. This portfolio showcases various projects and demonstrates my skills in web development.
+Welcome to the official portfolio of Rushil Shah, a **FullStack Developer** specializing in **Vanilla JavaScript**, **HTML**, **CSS**, and **UI/UX Design**. This portfolio showcases various projects and demonstrates my skills in web development.
 
 ## Table of Contents
 - [About](#about)
@@ -16,9 +16,9 @@ Welcome to the official portfolio of Rushil Shah, a **Frontend Developer** speci
 
 ## About
 
-This is a **Vanilla JavaScript** powered portfolio where you can find all my frontend projects, skills, and background as a developer. The portfolio includes projects built using **HTML**, **CSS**, and **JavaScript**.
+This is a **Vanilla JavaScript** powered portfolio where you can find all my Frontend projects, skills, and background as a developer. The portfolio includes projects built using **HTML**, **CSS**, and **JavaScript**.
 
-I am passionate about creating dynamic, user-friendly, and responsive websites. This portfolio serves as a way for me to showcase my work and abilities as a frontend developer.
+I am passionate about creating dynamic, user-friendly, and responsive websites. This portfolio serves as a way for me to showcase my work and abilities as a Frontend developer.
 
 ## Technologies Used
 

@@ -76,6 +76,24 @@ function setCVDownloadGACustomEvent() {
 
 /**
  * @returns {void}
+ * @param {boolean} isClickable
+ * @description toggle click event in header buttons
+ */
+function toggleClickableHeaderButtons(isClickable) {
+  try {
+    const buttons = document.querySelectorAll('[data-is-clickable-in-background="false"]');
+
+    for (const button of buttons) {
+      if (isClickable) button.classList.remove('pointer-events-none');
+      else button.classList.add('pointer-events-none');
+    }
+  } catch (error) {
+    console.error('toggle clickable header buttons - ', error);
+  }
+}
+
+/**
+ * @returns {void}
  * @description set bread menu animation
  */
 function setBreadMenuAnimation() {
@@ -83,30 +101,25 @@ function setBreadMenuAnimation() {
     const breadBtn = document.getElementById('bread-menu');
     if (!breadBtn) return;
 
-    breadBtn.addEventListener('click', function () {
-      const responsiveMenu = document.getElementById('responsive-menu');
-      if (!responsiveMenu) return;
+    const responsiveMenu = document.getElementById('responsive-menu');
+    if (!responsiveMenu) return;
 
+    breadBtn.addEventListener('click', function () {
       let topBreadSelector,
         bottomBreadSelector,
-        state,
-        visibility,
-        opacity;
-      switch (breadBtn.dataset.state) {
-        case 'Menu': {
+        state;
+      switch (responsiveMenu.dataset.state) {
+        case 'Menu':
+        case 'Stale': {
           topBreadSelector = 'top-bread-open';
           bottomBreadSelector = 'bottom-bread-open';
           state = 'Close';
-          visibility = 'visible';
-          opacity = 1;
           break;
         }
         case 'Close': {
           topBreadSelector = 'top-bread-close';
           bottomBreadSelector = 'bottom-bread-close';
           state = 'Menu';
-          visibility = 'collapse';
-          opacity = 0;
           break;
         }
       }
@@ -118,10 +131,9 @@ function setBreadMenuAnimation() {
 
       topLine.beginElement();
       bottomLine.beginElement();
-      breadBtn.dataset.state = state;
+      responsiveMenu.dataset.state = state;
       breadBtn.setAttribute('aria-label', state);
-      responsiveMenu.style.visibility = visibility;
-      responsiveMenu.style.opacity = opacity;
+      toggleClickableHeaderButtons(state !== 'Close');
     });
   } catch (error) {
     console.error('set hamburger menu animation - ', error);
@@ -147,6 +159,45 @@ function setFooter() {
 
 /**
  * @returns {void}
+ * @description set bread menu auto close
+ */
+function setBreadMenuAutoCloser() {
+  try {
+    const breadBtn = document.getElementById('bread-menu');
+    if (!breadBtn) return;
+
+    const responsiveMenu = document.getElementById('responsive-menu');
+    if (!responsiveMenu) return;
+
+    const menuItems = document.querySelectorAll('a.menu-item');
+    for (const item of menuItems) {
+      item.addEventListener('click', function () {
+        if (responsiveMenu.dataset.state === 'Close') breadBtn.click();
+      });
+    }
+  } catch (error) {
+    console.error('set bread menu auto closer - ', error);
+  }
+}
+
+/**
+ * @returns {void}
+ * @description remove loader
+ */
+function removeLoader() {
+  try {
+    const loader = document.getElementById('loader');
+    if (!loader) return;
+
+    loader.style.visibility = 'hidden';
+    loader.style.opacity = 0;
+  } catch (error) {
+    console.error('remove loader - ', error);
+  }
+}
+
+/**
+ * @returns {void}
  * @description initialization of app
  */
 function init() {
@@ -156,6 +207,8 @@ function init() {
     setCVDownloadGACustomEvent();
     setBreadMenuAnimation();
     setFooter();
+    setBreadMenuAutoCloser();
+    setTimeout(removeLoader, 1000);
   } catch (error) {
     console.error('App initalizatin failed - ', error);
   }

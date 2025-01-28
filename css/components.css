@@ -22,3 +22,7 @@
   font: var(--font-sf-pro-display-medium);
   letter-spacing: var(--letter-spacing-011-em);
 }
+
+.pointer-events-none {
+  pointer-events: none;
+}
