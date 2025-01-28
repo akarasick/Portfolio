@@ -192,6 +192,12 @@ function removeLoader() {
     const manImage = document.querySelector('img.man');
     if (!manImage) return;
 
+    if (manImage.complete) {
+      loader.style.visibility = 'hidden';
+      loader.style.opacity = 0;
+      return;
+    }
+
     const event = manImage.addEventListener('load', function () {
       loader.style.visibility = 'hidden';
       loader.style.opacity = 0;
