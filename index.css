@@ -43,8 +43,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: var(--z-index-100);
-  background-color: var(--color-primary-shade);
+  z-index: var(--z-index-100, 100); /* with fallback value */
+  background-color: var(--color-primary-shade, rgba(245, 245, 247, 1)); /* with fallback value */
 }
 
 header {

@@ -169,7 +169,7 @@ function setBreadMenuAutoCloser() {
     const responsiveMenu = document.getElementById('responsive-menu');
     if (!responsiveMenu) return;
 
-    const menuItems = document.querySelectorAll('a.menu-item');
+    const menuItems = document.querySelectorAll('.menu-item');
     for (const item of menuItems) {
       item.addEventListener('click', function () {
         if (responsiveMenu.dataset.state === 'Close') breadBtn.click();
@@ -189,8 +189,14 @@ function removeLoader() {
     const loader = document.getElementById('loader');
     if (!loader) return;
 
-    loader.style.visibility = 'hidden';
-    loader.style.opacity = 0;
+    const manImage = document.querySelector('img.man');
+    if (!manImage) return;
+
+    const event = manImage.addEventListener('load', function () {
+      loader.style.visibility = 'hidden';
+      loader.style.opacity = 0;
+      removeEventListener(event);
+    });
   } catch (error) {
     console.error('remove loader - ', error);
   }
@@ -208,7 +214,7 @@ function init() {
     setBreadMenuAnimation();
     setFooter();
     setBreadMenuAutoCloser();
-    setTimeout(removeLoader, 1000);
+    removeLoader();
   } catch (error) {
     console.error('App initalizatin failed - ', error);
   }
