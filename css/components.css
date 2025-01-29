@@ -30,3 +30,7 @@
 .press:active {
   transform: scale(1.1);
 }
+
+.display-none {
+  display: none;
+}
