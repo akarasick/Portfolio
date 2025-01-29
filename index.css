@@ -216,7 +216,7 @@ main {
   align-items: center;
   width: calc(var(--space-5px) * 8);
   height: calc(var(--space-5px) * 8);
-  background-image: url("./assets/images/icons.png");
+  background-image: url("./assets/images/40x40-icons.png");
   background-repeat: no-repeat;
 }
 
@@ -225,11 +225,11 @@ main {
 }
 
 .mail {
-  background-position: -113px -10px;
+  background-position: -131px -10px;
 }
 
 .whatsaap {
-  background-position: -62px -62px;
+  background-position: -71px -70px;
 }
 
 .linkedin {
@@ -237,11 +237,11 @@ main {
 }
 
 .github {
-  background-position: -63px -10px;
+  background-position: -71px -10px;
 }
 
 .twitter {
-  background-position: -10px -62px;
+  background-position: -11px -70px;
 }
 
 #about {

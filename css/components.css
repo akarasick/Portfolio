@@ -23,11 +23,6 @@
   letter-spacing: var(--letter-spacing-011-em);
 }
 
-.pointer-events-none {
-  pointer-events: none;
-}
-
-
 .press {
   transition: transform .05s ease-out 0.015s;
 }
