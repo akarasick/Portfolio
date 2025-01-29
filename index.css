@@ -224,7 +224,7 @@ main {
   filter: invert(1);
 }
 
-.mail {
+/* .mail {
   background-position: -131px -10px;
 }
 
@@ -242,6 +242,26 @@ main {
 
 .twitter {
   background-position: -11px -70px;
+} */
+
+.mail {
+  background-position: -113px -10px;
+}
+
+.whatsaap {
+  background-position: -62px -62px;
+}
+
+.linkedin {
+  background-position: -11px -10px;
+}
+
+.github {
+  background-position: -63px -10px;
+}
+
+.twitter {
+  background-position: -10px -62px;
 }
 
 #about {
