@@ -172,6 +172,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: var(--header-height);
 }
 
 #board::after {
@@ -250,6 +251,7 @@ main {
   align-items: center;
   flex-direction: column;
   min-height: 100vh;
+  padding-top: var(--header-height);
 }
 
 #about>section {
@@ -262,6 +264,7 @@ main {
   align-items: center;
   flex-direction: column;
   min-height: 100vh;
+  padding-top: var(--header-height);
 }
 
 footer {
