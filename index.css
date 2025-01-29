@@ -1,5 +1,5 @@
-@import url("./css/variables.css");
 @import url("./css/theme.css");
+@import url("./css/variables.css");
 @import url("./css/animation.css");
 @import url("./css/fonts.css");
 @import url("./css/dark-light-toggler.css");
@@ -179,6 +179,74 @@ main {
 
 .developer {
   display: none;
+}
+
+#contact-details {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: calc(var(--space-7px) * 2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact-details>.drawer {
+  margin: 0 calc(var(--space-2px) * 8);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: calc(var(--space-3px) * 9);
+  backdrop-filter: var(--header-backdrop-filter);
+  box-shadow: 0 calc(var(--space-2px) * 2) calc(var(--space-3px) * 2) var(--color-secondary-shadow-1), 0 var(--space-1px) var(--space-3px) var(--color-secondary-shadow-2);
+  border-radius: calc(var(--space-5px) * 2);
+  padding: calc(var(--space-5px) * 2);
+  background-color: var(--color-primary);
+}
+
+#contact-details>.drawer>a {
+  pointer-events: auto;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact-details>.drawer>a>img {
+  width: calc(var(--space-2px) * 16);
+  height: calc(var(--space-2px) * 16);
+}
+
+#contact-details>.drawer>a {
+  width: calc(var(--space-2px) * 16);
+  height: calc(var(--space-2px) * 16);
+  background-image: url("./assets/images/icons.png");
+  background-repeat: no-repeat;
+}
+
+.mail {
+  background-position: -113px -10px;
+}
+
+.whatsaap {
+  background-position: -62px -62px;
+}
+
+.linkedin {
+  background-position: -11px -10px;
+}
+
+.github {
+  background-position: -63px -10px;
+}
+
+.twitter {
+  background-position: -10px -62px;
+}
+
+.dark #contact-details>.drawer>a[data-is-filter-invert-needed="true"] {
+  filter: invert(1);
 }
 
 #about {

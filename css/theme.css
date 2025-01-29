@@ -13,10 +13,8 @@
   --color-secondary: rgba(0, 0, 0, .8);
   --color-secondary-shade: rgba(0, 0, 0, 1);
   --color-secondary-tint: rgba(0, 0, 0, .54);
-
-  --color-tertiary: rgba(0, 122, 255, .54);
-  --color-tertiary-shade: rgba(0, 122, 255, .8);
-  --color-tertiary-tint: rgba(0, 122, 255, 1);
+  --color-secondary-shadow-1: rgba(0, 0, 0, 0.1);
+  --color-secondary-shadow-2: rgba(0, 0, 0, 0.08);
 }
 
 .dark {
@@ -27,8 +25,6 @@
   --color-secondary: rgba(255, 255, 255, .8);
   --color-secondary-shade: rgba(245, 245, 247, 1);
   --color-secondary-tint: rgba(255, 255, 255, 1);
-
-  --color-tertiary: rgba(0, 122, 255, .54);
-  --color-tertiary-shade: rgba(0, 122, 255, .8);
-  --color-tertiary-tint: rgba(0, 122, 255, 1);
+  --color-secondary-shadow-1: rgba(255, 245, 247, 0.1);
+  --color-secondary-shadow-2: rgba(255, 245, 247, 0.08);
 }

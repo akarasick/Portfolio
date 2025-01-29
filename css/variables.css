@@ -20,6 +20,6 @@
   --letter-spacing-011-em: .011em;
 
   /* css filters */
-  --filter-blur-20px: blur(20px);
+  --filter-blur-20px: blur(calc(var(--space-5px) * 4));
   --saturate-180-percentage: saturate(180%);
 }

@@ -26,3 +26,12 @@
 .pointer-events-none {
   pointer-events: none;
 }
+
+
+.press {
+  transition: transform .05s ease-out 0.015s;
+}
+
+.press:active {
+  transform: scale(1.1);
+}
