@@ -84,8 +84,8 @@ function toggleClickableHeaderButtons(isClickable) {
     const buttons = document.querySelectorAll('[data-is-clickable-in-background="false"]');
 
     for (const button of buttons) {
-      if (isClickable) button.classList.remove('pointer-events-none');
-      else button.classList.add('pointer-events-none');
+      if (isClickable) button.state.isClickableInBackground = 'true';
+      else button.state.isClickableInBackground = 'false';
     }
   } catch (error) {
     console.error('toggle clickable header buttons - ', error);
@@ -163,16 +163,15 @@ function setFooter() {
  */
 function setBreadMenuAutoCloser() {
   try {
-    const breadBtn = document.getElementById('bread-menu');
-    if (!breadBtn) return;
-
     const responsiveMenu = document.getElementById('responsive-menu');
     if (!responsiveMenu) return;
 
     const menuItems = document.querySelectorAll('.menu-item');
     for (const item of menuItems) {
       item.addEventListener('click', function () {
-        if (responsiveMenu.dataset.state === 'Close') breadBtn.click();
+        const breadBtn = document.getElementById('bread-menu');
+        if (!breadBtn || responsiveMenu.dataset.state !== 'Close') return;
+        breadBtn.click();
       });
     }
   } catch (error) {

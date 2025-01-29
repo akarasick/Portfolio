@@ -149,6 +149,10 @@ header>nav>ul li>a:hover {
   letter-spacing: var(--letter-spacing-007-em);
 }
 
+a[data-is-clickable-in-background="false"] {
+  pointer-events: none;
+}
+
 header>nav>ul li:has(.theme-changer) {
   margin-left: auto;
   margin-right: calc(var(--space-2px) * 8);
@@ -212,17 +216,12 @@ main {
   align-items: center;
   width: calc(var(--space-5px) * 8);
   height: calc(var(--space-5px) * 8);
-  /* background-image: url("./assets/images/icons.png"); */
+  background-image: url("./assets/images/icons.png");
   background-repeat: no-repeat;
 }
 
 .dark #contact-details>.drawer>a[data-is-filter-invert-needed="true"] {
   filter: invert(1);
-}
-
-#contact-details>.drawer>a>img {
-  width: calc(var(--space-5px) * 8);
-  height: calc(var(--space-5px) * 8);
 }
 
 .mail {

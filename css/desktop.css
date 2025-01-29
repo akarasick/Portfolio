@@ -37,6 +37,10 @@
     font: var(--font-sf-pro-text-small);
   }
 
+  a[data-is-clickable-in-background="false"] {
+    pointer-events: auto;
+  }
+
   #home {
     height: 100vh;
     display: flex;
