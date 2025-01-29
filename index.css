@@ -214,8 +214,8 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: calc(var(--space-5px) * 8);
-  height: calc(var(--space-5px) * 8);
+  width: calc(var(--space-2px) * 16);
+  height: calc(var(--space-2px) * 16);
   background-image: url("./assets/images/40x40-icons.png");
   background-repeat: no-repeat;
 }
