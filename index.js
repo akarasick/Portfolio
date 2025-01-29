@@ -187,18 +187,8 @@ function removeLoader() {
     const loader = document.getElementById('loader');
     if (!loader) return;
 
-    const manImage = document.querySelector('img.man');
-    if (!manImage || manImage.complete) {
-      loader.style.visibility = 'hidden';
-      loader.style.opacity = 0;
-      return;
-    }
-
-    const event = manImage.addEventListener('load', function () {
-      loader.style.visibility = 'hidden';
-      loader.style.opacity = 0;
-      removeEventListener('load', event);
-    });
+    loader.style.visibility = 'hidden';
+    loader.style.opacity = 0;
   } catch (error) {
     console.error('remove loader - ', error);
   }
