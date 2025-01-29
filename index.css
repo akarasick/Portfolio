@@ -216,7 +216,7 @@ main {
   align-items: center;
   width: calc(var(--space-2px) * 16);
   height: calc(var(--space-2px) * 16);
-  background-image: url("./assets/images/40x40-icons.png");
+  background-image: url("./assets/images/32x32-icons.png");
   background-repeat: no-repeat;
 }
 
