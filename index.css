@@ -149,11 +149,11 @@ header>nav>ul li>a:hover {
   letter-spacing: var(--letter-spacing-007-em);
 }
 
-a[data-is-clickable-in-background="false"] {
+a[data-is-clickable="false"] {
   pointer-events: none;
 }
 
-header>nav>ul li:has(.theme-changer) {
+.header-item-right-align {
   margin-left: auto;
   margin-right: calc(var(--space-2px) * 8);
 }
@@ -229,7 +229,7 @@ main {
 }
 
 .whatsaap {
-  background-position: -71px -70px;
+  background-position: -70px -70px;
 }
 
 .linkedin {

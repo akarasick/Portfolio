@@ -81,11 +81,10 @@ function setCVDownloadGACustomEvent() {
  */
 function toggleClickableHeaderButtons(isClickable) {
   try {
-    const buttons = document.querySelectorAll('[data-is-clickable-in-background="false"]');
+    const buttons = document.querySelectorAll('[data-is-clickable]');
 
     for (const button of buttons) {
-      if (isClickable) button.state.isClickableInBackground = 'true';
-      else button.state.isClickableInBackground = 'false';
+      button.dataset.isClickable = isClickable ? 'true' : 'false';
     }
   } catch (error) {
     console.error('toggle clickable header buttons - ', error);
@@ -198,7 +197,7 @@ function removeLoader() {
     const event = manImage.addEventListener('load', function () {
       loader.style.visibility = 'hidden';
       loader.style.opacity = 0;
-      removeEventListener(event);
+      removeEventListener('load', event);
     });
   } catch (error) {
     console.error('remove loader - ', error);
