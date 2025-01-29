@@ -68,32 +68,6 @@
     padding: calc(var(--space-5px) * 2) calc(var(--space-5px) * 3);
   }
 
-  #contact-details>.drawer>a {
-    background-image: url("../assets/images/32x32-icons.png");
-    width: calc(var(--space-2px) * 16);
-    height: calc(var(--space-2px) * 16);
-  }
-
-  .mail {
-    background-position: -113px -10px;
-  }
-
-  .whatsaap {
-    background-position: -62px -62px;
-  }
-
-  .linkedin {
-    background-position: -11px -10px;
-  }
-
-  .github {
-    background-position: -63px -10px;
-  }
-
-  .twitter {
-    background-position: -10px -62px;
-  }
-
   #about {
     padding: 0 6%;
   }
