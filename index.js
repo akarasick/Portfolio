@@ -290,8 +290,10 @@ function init() {
   }
 }
 
+
 'use strict';
 var localStorage = new LocalStorage();
 var console = new Console(localStorage);
 var theme = localStorage.getItem('THEME') || (window?.matchMedia?.('(prefers-color-scheme: dark)')?.matches ? Theme.DARK : Theme.LIGHT); // checking system dark mode is enable or not
-init();
+
+window.onload = init;
