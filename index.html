@@ -69,8 +69,10 @@
 
   <!-- Link to external CSS (mobile first approach) -->
   <link rel="stylesheet" type="text/css" href="index.css" referrerpolicy="no-referrer">
-  <link rel="stylesheet" type="text/css" href="./css/desktop.css" referrerpolicy="no-referrer"
+  <link rel="stylesheet" type="text/css" href="./css/tablet.css" referrerpolicy="no-referrer"
     media="(min-width: 768px)">
+  <link rel="stylesheet" type="text/css" href="./css/desktop.css" referrerpolicy="no-referrer"
+    media="(min-width: 1200px)">
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-YCXZNJVMQF"></script>
@@ -183,36 +185,23 @@
         <p id="home-description" class="h3 text-align-justify"></p>
       </div>
       <div class="developer">
-        <!-- responsive image load -->
-        <picture>
-          <!-- hack to know image is loaded or not for loader stop -->
-          <source srcset="null" media="(max-width: 767px)" class="display-none" />
-          <img class="man" src="./assets/images/man.svg" />
-        </picture>
-        <picture class="ring">
-          <source srcset="./assets/images/ellipse.svg" media="(min-width: 768px)" />
-          <img />
-        </picture>
+        <img class="man" src="./assets/images/man.svg" />
+        <img class="ring" src="./assets/images/ellipse.svg" />
       </div>
 
       <div id="contact-details" class="contact-details">
         <div class="drawer">
           <a class="press mail" href="mailto:rushil.shah.dev@gmail.com" target="_blank">
-            <!-- <img src="https://www.google.com/a/cpanel/intelliticks.com/images/favicon.ico" /> -->
           </a>
-          <a class="press whatsaap" href="https://wa.me/917984299636" target="_blank">
-            <!-- <img src="https://static.whatsapp.net/rsrc.php/v4/yz/r/ujTY9i_Jhs1.png" /> -->
+          <a class="press whatsapp" href="https://wa.me/917984299636" target="_blank">
           </a>
           <a class="press linkedin" href="https://in.linkedin.com/in/er-rushil" target="_blank">
-            <!-- <img src="https://static.licdn.com/scds/common/u/images/logos/favicons/v1/favicon.ico" /> -->
           </a>
           <a class="press github" href="https://github.com/anonymous0000007" target="_blank"
             data-is-filter-invert-needed="true">
-            <!-- <img src="https://github.githubassets.com/assets/pinned-octocat-093da3e6fa40.svg" /> -->
           </a>
           <a class="press twitter" href="https://x.com/rushil091998" target="_blank"
             data-is-filter-invert-needed="true">
-            <!-- <img src="https://abs.twimg.com/responsive-web/client-web/icon-svg.ea5ff4aa.svg" /> -->
           </a>
         </div>
       </div>

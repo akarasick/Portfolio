@@ -1,4 +1,4 @@
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 768px) {
 
   .bread-menu {
     display: none;
@@ -53,8 +53,6 @@
 
   #home {
     flex-direction: row;
-    gap: 20%;
-    padding-right: 12%;
   }
 
   .developer {
@@ -71,7 +69,7 @@
 
   #contact-details>.drawer {
     width: max-content;
-    gap: calc(var(--space-3px) * 5);
+    gap: calc(var(--space-3px) * 6);
     padding: calc(var(--space-5px) * 2) calc(var(--space-5px) * 3);
   }
 }

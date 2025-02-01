@@ -28,9 +28,13 @@
 }
 
 .press:active {
-  transform: scale(1.1);
+  transform: scale(1.2) !important;
 }
 
-.display-none {
-  display: none;
+*[data-is-clickable="false"] {
+  pointer-events: none;
+}
+
+*[data-is-clickable="false"] {
+  pointer-events: auto;
 }
