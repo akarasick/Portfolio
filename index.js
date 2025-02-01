@@ -262,10 +262,31 @@ function setTypeingEffect() {
 
 /**
  * @returns {void}
+ * @description set key stroke event none inspired from figma
+ */
+function setKeyStrokeEventNone() {
+  document.addEventListener('keydown', event => {
+    event.preventDefault();
+    return false;
+  });
+}
+
+/**
+ * @returns {void}
+ * @description set context menu (right click) none
+ */
+function setContextMenuNone() {
+  document.addEventListener('contextmenu', event => event.preventDefault());
+}
+
+/**
+ * @returns {void}
  * @description initialization of app
  */
 function init() {
   try {
+    setKeyStrokeEventNone();
+    setContextMenuNone();
     if (theme) changeTheme(theme);
     setThemeChanger();
     setCVDownloadGACustomEvent();

@@ -185,8 +185,15 @@
         <p id="home-description" class="h3 text-align-justify"></p>
       </div>
       <div class="developer">
-        <img class="man" src="./assets/images/man.svg" />
-        <img class="ring" src="./assets/images/ellipse.svg" />
+        <!-- responsive image load -->
+        <picture class="man">
+          <source srcset="./assets/images/man.svg" media="(min-width: 768px)" />
+          <img />
+        </picture>
+        <picture class="ring">
+          <source srcset="./assets/images/ellipse.svg" media="(min-width: 768px)" />
+          <img />
+        </picture>
       </div>
 
       <div id="contact-details" class="contact-details">

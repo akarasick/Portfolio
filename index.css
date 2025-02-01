@@ -33,7 +33,7 @@ body {
   flex-direction: column;
 
   color: var(--color-secondary);
-  background-color: var(--color-primary);
+  background-color: var(--color-primary-tint);
 }
 
 #loader {
@@ -191,7 +191,7 @@ section>section {
   margin-top: calc(var(--space-5px) * -2);
   font-size: calc(var(--space-5px) * 2);
   padding-bottom: var(--space-2px);
-  padding-top: calc(var(--space-3px) * 4);
+  padding-top: calc(var(--space-3px) * 3);
   border: calc(var(--space-3px) * 2) solid var(--color-secondary);
   border-bottom: 0;
 }
