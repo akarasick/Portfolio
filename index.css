@@ -269,7 +269,7 @@ main>section>section {
 
 .card {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: column;
   margin-bottom: calc(var(--space-5px) * 4);
 }
