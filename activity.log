@@ -1,0 +1,58 @@
+DONE:
+1. seo friendly people can search me even in google
+2. resume download button
+3. make app feel selectable none pointer event also none
+4. csp meta tag added
+5. sf pro apple fonts
+6. dark theme toggler - https://web.dev/patterns/theming/theme-switch#css
+7. google analytics integration with unique user cv download
+8. theme toggler color add
+9. default system theme will be show (dark or light) if user prefer theme it will save and next time selected theme will show
+10. favicon
+11. twitter og tags also added
+12. header section
+13. css variables for mobile, desktop, tablet breakpoint
+14. footer section
+15. home section desktop section
+16. home section mobile section
+17. Projects desktop
+18. Projects mobile
+19. smooth scrolling
+20. about me desktop
+21. about me mobile
+22. loader
+23. header mobile menu animation
+24. onclick of menu select close div
+25. button is clickable from responsive menu div
+26. loader fix on man image load remove loader plus added fallback values for css variables
+27. load image on desktop only (man, ellipsis)
+28. word write erase functionality
+29. project section v2 for mobile & desktop
+30. about me section v2 for mobile & desktop
+31. contact section mobile
+32. contact section desktop
+33. css sprite also used
+34. on mobile rotate design is not responsive home section height 100vh is making problem
+35. tablet css breakpoint added
+36. cursor style change linux & mac style
+37. man.svg image responsive loading
+38. keystroke, context menu disabled for app like premium UI part
+39. 404.html page added (csp header, favicon only added in that file, maybe Google analytics add)
+41. project section image crop size reduction
+42. project section convert that image into avif, webp, and png
+43. project section v3
+44. card css fix
+
+WIP:
+  Low:
+    1. german, french, spain, mandrin, japanese language should be allowed (optional)
+    2. qr code
+
+RESOURCE:
+1. https://fjolt.com/article/css-ios-crystalline-effect-backdrop-filter/
+2. https://codepen.io/code-kitchen/pen/rNMLqXq
+3. https://dribbble.com/shots/22351127-AR-Mode-Vision-OS-Sportlive
+4. https://dribbble.com/shots/23531329-kawsar-design-2024
+5. https://dribbble.com/shots/21866369-Spatial-Design-Apple-Music-Replica-Figma-UI
+
+Google Analytics ID = YCXZNJVMQF

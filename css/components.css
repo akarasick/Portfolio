@@ -23,18 +23,27 @@
   letter-spacing: var(--letter-spacing-011-em);
 }
 
+.h4 {
+  font: var(--font-sf-pro-text-small);
+  letter-spacing: var(--letter-spacing-011-em);
+}
+
 .press {
   transition: transform .05s ease-out 0.015s;
 }
 
 .press:active {
-  transform: scale(1.2) !important;
+  transform: scale(1.1) !important;
 }
 
 *[data-is-clickable="false"] {
   pointer-events: none;
 }
 
-*[data-is-clickable="false"] {
+*[data-is-clickable="true"] {
   pointer-events: auto;
+}
+
+.dark *[data-is-filter-invert-needed="true"] {
+  filter: invert(1);
 }

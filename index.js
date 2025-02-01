@@ -266,6 +266,11 @@ function setTypeingEffect() {
  */
 function setKeyStrokeEventNone() {
   document.addEventListener('keydown', event => {
+
+    if (
+      (event.ctrlKey && event.shiftKey && (event.key === 'R' || event.keyCode === 82)) || // allowing hard refresh
+      (event.key === 'F5' || event.keyCode === 116) // allowing normal refresh
+    ) return true;
     event.preventDefault();
     return false;
   });

@@ -22,4 +22,7 @@
   /* css filters */
   --filter-blur-20px: blur(calc(var(--space-5px) * 4));
   --saturate-180-percentage: saturate(180%);
+
+  /* border-radius */
+  --border-radius-medium: calc(var(--space-5px) * 3);
 }

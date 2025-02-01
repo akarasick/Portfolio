@@ -40,7 +40,7 @@
 
   .responsive-menu>ul>li>a {
     padding: 0;
-    font: var(--font-sf-pro-text-small);
+    font: var(--font-sf-pro-text-xs);
   }
 
   section {
@@ -71,7 +71,34 @@
 
   #contact-details>.drawer {
     width: max-content;
-    gap: calc(var(--space-3px) * 5);
-    padding: calc(var(--space-5px) * 2) calc(var(--space-5px) * 3);
+    gap: calc(var(--space-3px));
+    padding: calc(var(--space-3px)) calc(var(--space-5px));
+  }
+
+  #contact-details>.drawer>a {
+    transform: scale(0.7);
+  }
+
+  .twitter {
+    transform: scale(0.6) !important;
+  }
+
+  .card-container {
+    gap: calc(var(--space-19px) * 4);
+  }
+
+  .card {
+    flex-direction: row;
+    gap: calc(var(--space-5px) * 36);
+    height: calc(var(--space-5px) * 36);
+  }
+
+  .card picture>img {
+    width: calc(var(--space-5px) * 70);
+    height: calc(var(--space-5px) * 36);
+  }
+
+  .card-content {
+    width: 65%;
   }
 }
