@@ -131,7 +131,6 @@ function setBreadMenuAnimation() {
       topLine.beginElement();
       bottomLine.beginElement();
       responsiveMenu.dataset.state = state;
-      breadBtn.setAttribute('aria-label', state);
       toggleClickableHeaderButtons(state !== 'Close');
     });
   } catch (error) {
