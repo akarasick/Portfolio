@@ -215,10 +215,13 @@ function setHomeSectionDescription() {
 function setTypeingEffect() {
   try {
     const names = [
-      "Adam Karasick",
-      'Forensic Accounting',
+      "Forensic Accounting",
       "Data Analytics",
-      "Business Intelligence"
+      "Business Intelligence",
+	  "Automation",
+	  "Dashboards & Reporting",
+	  "Fraud Detection & Prevention",
+	  "Real-Time Insights"
     ];
     const typingSpeed = 100; // Speed of typing
     const erasingSpeed = 50; // Speed of erasing
