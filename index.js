@@ -202,7 +202,7 @@ function setHomeSectionDescription() {
     const homeDescription = document.getElementById('home-description');
     if (!homeDescription) return;
 
-    homeDescription.textContent = `I’m a full-stack developer with ${new Date().getFullYear() - 2020} years of experience in both MERN and MEAN stacks, blending creativity with precision to craft seamless, innovative solutions.`;
+    homeDescription.textContent = `I’m a forensic accountant and data analytics specialist with ${new Date().getFullYear() - 2010} years of experience.`;
   } catch (error) {
     console.error('set home section description - ', error);
   }
