@@ -215,7 +215,7 @@ function setHomeSectionDescription() {
 function setTypeingEffect() {
   try {
     const names = [
-      "Adam Karasick.",
+      "Adam Karasick",
       'Forensic Accounting',
       "Data Analytics",
       "Business Intelligence"
