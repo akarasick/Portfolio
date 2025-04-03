@@ -215,10 +215,10 @@ function setHomeSectionDescription() {
 function setTypeingEffect() {
   try {
     const names = [
-      "Rushil Shah.",
-      'Open Source Contributor.',
-      "Chess Enthusiast.",
-      "Developer."
+      "Adam Karasick.",
+      'Forensic Accounting',
+      "Data Analytics",
+      "Business Intelligence"
     ];
     const typingSpeed = 100; // Speed of typing
     const erasingSpeed = 50; // Speed of erasing
