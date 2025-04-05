@@ -148,7 +148,7 @@ function setFooter() {
     if (!footer) return;
 
     const p = document.createElement('p');
-    p.innerHTML = `Copyright &copy; ${new Date().getFullYear()} Rushil Shah. All rights reserved.`;
+    p.innerHTML = `Copyright &copy; ${new Date().getFullYear()} Adam Karasick. All rights reserved.`;
     footer.appendChild(p);
   } catch (error) {
     console.error('set footer - ', error);
